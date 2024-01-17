@@ -11856,6 +11856,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.navBtn {
+  background-color: #da0000;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5vw 1.8vw;
+  color: #ffffff;
+  box-shadow: 6px 3px 20px rgba(221, 16, 16, 0.4);
+}
+
 .heroSection {
   background-color: #dcdcdc;
   padding: 5vh;
@@ -11866,6 +11875,21 @@ textarea.form-control-lg {
 
 .leftSideHeroS {
   width: 30%;
+}
+
+.heroBtn {
+  border: none;
+  background: none;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+.heroBtn i {
+  color: #dd1f1f;
+  font-size: 1.8vw;
+  font-weight: lighter;
 }
 
 .aboutSectionLeft {
@@ -11963,7 +11987,17 @@ textarea.form-control-lg {
   font-size: 1.5vw;
 }
 .whiteCards:hover {
-  transform: scale(1.05);
+  transform: scale(1.06);
+}
+
+.cardChefs {
+  background-color: #be2f2f;
+  width: 20%;
+  text-align: center;
+  background-size: contain;
+}
+.cardChefs img {
+  width: 255px;
 }
 
 /*# sourceMappingURL=app.css.map */
