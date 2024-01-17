@@ -11865,6 +11865,10 @@ textarea.form-control-lg {
   box-shadow: 6px 3px 20px rgba(221, 16, 16, 0.4);
 }
 
+@font-face {
+  font-family: gloria;
+  src: url(../fonts/GloriaHallelujah-Regular.ttf);
+}
 .heroSection {
   background-color: #dcdcdc;
   padding: 5vh;
@@ -11991,13 +11995,34 @@ textarea.form-control-lg {
 }
 
 .cardChefs {
-  background-color: #be2f2f;
-  width: 20%;
+  background-color: #ffffff;
+  width: 30%;
   text-align: center;
-  background-size: contain;
 }
-.cardChefs img {
-  width: 255px;
+.cardChefs .chefImg {
+  background-image: url(../images/img/chefs/chefs-1.jpg);
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cardChefs .chefImg2 {
+  background-image: url(../images/img/chefs/chefs-2.jpg);
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cardChefs .chefImg3 {
+  background-image: url(../images/img/chefs/chefs-3.jpg);
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titre {
+  font-family: gloria;
 }
 
 /*# sourceMappingURL=app.css.map */
