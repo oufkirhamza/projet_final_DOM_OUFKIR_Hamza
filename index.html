@@ -48,7 +48,51 @@
                     </li>
                 </ul>
             </div>
-            <button class="navBtn bg-danger text-light ">Signup | Login</button>
+            <!-- <button class="navBtn bg-danger text-light ">Signup | Login</button> -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Sign up | Log in
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Connexion</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column gap-2">
+                            <div class="modalBtn d-flex gap-3">
+                                <button class="w-50 bg-danger border border-danger text-light py-2">Sign Up</button>
+                                <button class="w-50 bg-light border border-danger text-danger py-2">Log In</button>
+                            </div>
+                            <div class="LogInModal d-none">
+                                <h5 class="text-center">Log in</h5>
+                                <form >
+                                    <input type="email" placeholder="email">
+                                    <input type="password" placeholder="password">
+                                </form>
+                            </div>
+                            <div class="signUpModal ">
+                                <h5 class="text-center">Sign up</h5>
+                                <form class="d-flex flex-column gap-2">
+                                    <input type="text" placeholder="First Name">
+                                    <input type="text" placeholder="Second Name">
+                                    <input type="email" placeholder="email">
+                                    <input type="password" placeholder="password">
+                                    <input type="password" placeholder="confirm your password">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
