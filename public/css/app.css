@@ -12021,6 +12021,31 @@ textarea.form-control-lg {
   height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.cardChefs .chefImg div {
+  position: absolute;
+  right: 1vw;
+  top: 3vh;
+  background-color: #acaaaa;
+  opacity: 50%;
+  border-radius: 0.2rem;
+  padding: 0.5vw;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  gap: 0.5vh;
+  text-decoration: none;
+  color: #000000;
+  display: none;
+  transition: 2s;
+}
+.cardChefs:hover {
+  transform: scale(1.03);
+}
+.cardChefs:hover .chefImg div {
+  display: flex;
 }
 .cardChefs .chefImg2 {
   background-image: url(../images/img/chefs/chefs-2.jpg);
@@ -12028,6 +12053,31 @@ textarea.form-control-lg {
   height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.cardChefs .chefImg2 div {
+  position: absolute;
+  right: 1vw;
+  top: 3vh;
+  background-color: #acaaaa;
+  opacity: 50%;
+  border-radius: 0.2rem;
+  padding: 0.5vw;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  gap: 0.5vh;
+  text-decoration: none;
+  color: #000000;
+  display: none;
+  transition: 2s;
+}
+.cardChefs:hover {
+  transform: scale(1.03);
+}
+.cardChefs:hover .chefImg2 div {
+  display: flex;
 }
 .cardChefs .chefImg3 {
   background-image: url(../images/img/chefs/chefs-3.jpg);
@@ -12035,6 +12085,31 @@ textarea.form-control-lg {
   height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.cardChefs .chefImg3 div {
+  position: absolute;
+  right: 1vw;
+  top: 3vh;
+  background-color: #acaaaa;
+  opacity: 50%;
+  border-radius: 0.2rem;
+  padding: 0.5vw;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  gap: 0.5vh;
+  text-decoration: none;
+  color: #000000;
+  display: none;
+  transition: 2s;
+}
+.cardChefs:hover {
+  transform: scale(1.03);
+}
+.cardChefs:hover .chefImg3 div {
+  display: flex;
 }
 
 .bookImg {
@@ -12164,6 +12239,70 @@ textarea.form-control-lg {
   color: #fff;
   font-weight: bolder;
   font-size: large;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw 10vw;
+}
+.map iframe {
+  border: none;
+  width: 100%;
+}
+
+.contact {
+  width: 80%;
+}
+
+.contactDetail {
+  display: flex;
+  align-items: center;
+  background-color: #d0cfcf;
+  width: 40%;
+  gap: 2vw;
+  padding: 1vh;
+}
+.contactDetail i {
+  color: #fff;
+  font-size: 2vw;
+  background-color: #e11616;
+  width: 4vw;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60%;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  width: 80%;
+  background: #fcfcfc;
+  box-shadow: 2px 5px 70px rgba(0, 0, 0, 0.2);
+  padding: 2vw;
+}
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1vw;
+}
+.contactForm form div {
+  display: flex;
+  gap: 1vw;
+}
+.contactForm form div input {
+  width: 50%;
+}
+.contactForm form input {
+  width: 100%;
+  padding: 1vh;
 }
 
 /*# sourceMappingURL=app.css.map */
