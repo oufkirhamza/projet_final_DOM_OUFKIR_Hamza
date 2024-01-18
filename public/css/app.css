@@ -12246,6 +12246,7 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
   padding: 2vw 10vw;
+  width: 100%;
 }
 .map iframe {
   border: none;
@@ -12303,6 +12304,37 @@ textarea.form-control-lg {
 .contactForm form input {
   width: 100%;
   padding: 1vh;
+}
+
+.footerDetail {
+  display: flex;
+  gap: 1vw;
+  width: 20%;
+}
+.footerDetail i {
+  font-size: 2.5vw;
+  color: #fff;
+}
+.footerDetail div {
+  width: 80%;
+  color: #fff;
+}
+
+.footerSocialM {
+  display: flex;
+  font-size: larger;
+  color: #fff;
+  flex-direction: column;
+}
+.footerSocialM div div {
+  display: flex;
+  gap: 2vw;
+}
+.footerSocialM div div a {
+  background-color: #fff;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=app.css.map */
