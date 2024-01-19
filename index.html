@@ -11,96 +11,84 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid ">
-            <div>
-                <a class="navbar-brand fw-bolder fs-3 " href="#">LionsResto <span class="text-danger ">.</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Chefs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-danger">Drop Down</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- <button class="navBtn bg-danger text-light ">Signup | Login</button> -->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Sign up | Log in
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Connexion</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <nav>
+        <a class="fw-bolder fs-3" href="#">LionsResto <span class="text-danger ">.</span></a>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Menu</a>
+            </li>
+            <li>
+                <a href="">Events</a>
+            </li>
+            <li>
+                <a href="">Chefs</a>
+            </li>
+            <li>
+                <a href="">Gallery</a>
+            </li>
+            <li>
+                <a class="text-danger" href="">Drop Down</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+        <!-- Modal -->
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Sign up | Log in
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Connexion</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex flex-column gap-2">
+                        <div class="modalBtn d-flex gap-3">
+                            <button class="w-50 bg-danger border border-danger text-light py-2">Sign Up</button>
+                            <button class="w-50 bg-light border border-danger text-danger py-2">Log In</button>
                         </div>
-                        <div class="modal-body d-flex flex-column gap-2">
-                            <div class="modalBtn d-flex gap-3">
-                                <button class="w-50 bg-danger border border-danger text-light py-2">Sign Up</button>
-                                <button class="w-50 bg-light border border-danger text-danger py-2">Log In</button>
-                            </div>
-                            <div class="LogInModal d-none">
-                                <h5 class="text-center">Log in</h5>
-                                <form>
-                                    <input type="email" placeholder="email">
-                                    <input type="password" placeholder="password">
-                                </form>
-                            </div>
-                            <div class="signUpModal ">
-                                <h5 class="text-center">Sign up</h5>
-                                <form class="d-flex flex-column gap-2">
-                                    <input type="text" placeholder="First Name">
-                                    <input type="text" placeholder="Second Name">
-                                    <input type="email" placeholder="email">
-                                    <input type="password" placeholder="password">
-                                    <input type="password" placeholder="confirm your password">
-                                </form>
-                            </div>
+                        <div class="LogInModal d-none">
+                            <h5 class="text-center">Log in</h5>
+                            <form>
+                                <input type="email" placeholder="email">
+                                <input type="password" placeholder="password">
+                            </form>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Sign up</button>
+                        <div class="signUpModal ">
+                            <h5 class="text-center">Sign up</h5>
+                            <form class="d-flex flex-column gap-2">
+                                <input type="text" placeholder="First Name">
+                                <input type="text" placeholder="Second Name">
+                                <input type="email" placeholder="email">
+                                <input type="password" placeholder="password">
+                                <input type="password" placeholder="confirm your password">
+                            </form>
                         </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Sign up</button>
                     </div>
                 </div>
             </div>
         </div>
+        <i class="fa-solid fa-toggle-off"></i>
     </nav>
     <main>
         <!--~ hero Section -->
         <section>
-            <div class="heroSection d-lg-flex justify-content-lg-between align-items-lg-center ">
-                <div class="leftSideHeroS">
-                    <h1>Enjoy Your Healthy Delicious Food</h1>
+            <div
+                class="heroSection d-flex flex-lg-row justify-content-lg-between align-items-lg-center flex-column-reverse">
+                <div class="leftSideHeroS ">
+                    <h1 class="titre">Enjoy Your Healthy Delicious Food</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos sint ipsa dolore!</p>
                     <div class="d-flex gap-3">
                         <button class="bookTable">Book a Table</button>
@@ -116,11 +104,11 @@
         <!--~ about  -->
         <section>
             <div>
-                <div class="d-lg-flex pt-5 pb-3 align-items-lg-center justify-content-lg-center flex-column">
+                <div class="d-flex pt-5 pb-3 align-items-center justify-content-center flex-column">
                     <p>ABOUT US</p>
                     <h3 class="titre">LEARN MORE <span class="text-danger">ABOUT US</span></h3>
                 </div>
-                <div class="w-100 px-5 d-flex gap-5">
+                <div class="aboutSection w-100 px-lg-5 d-flex gap-5">
                     <div class="aboutSectionLeft">
                         <div class="bg-light w-50">
                             <h4>Book a Table</h4>
@@ -210,7 +198,7 @@
         <!--~ menu  -->
         <section class="py-5">
             <div>
-                <div class="d-lg-flex pt-5 pb-3 align-items-lg-center justify-content-lg-center flex-column">
+                <div class="d-flex pt-5 pb-3 align-items-center justify-content-center flex-column">
                     <p>OUR Menu</p>
                     <h3 class="titre">CHECK OUR <span class="text-danger">YUMMY MENU</span></h3>
                 </div>
@@ -414,13 +402,13 @@
                         aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner ">
+                    <div class="text-center">
+                        <p>TESTIMONIALS</p>
+                        <h4 class="titre">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span> </h4>
+                    </div>
                     <div class="carousel-item active">
                         <div class="d-flex flex-column justify-content-center align-items-center gap-5 py-5">
-                            <div class="text-center">
-                                <p>TESTIMONIALS</p>
-                                <h4 class="titre">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span> </h4>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="testimonialsCarousel d-flex justify-content-center align-items-center">
                                 <div class="comment">
                                     <span><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor sit amet
                                         consectetur, adipisicing elit. Quibusdam, repellendus dolorum quae dicta ut
@@ -441,11 +429,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="d-flex flex-column justify-content-center align-items-center gap-5 py-5">
-                            <div class="text-center">
-                                <p>TESTIMONIALS</p>
-                                <h4 class="titre">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span> </h4>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="testimonialsCarousel d-flex justify-content-center align-items-center">
                                 <div class="comment">
                                     <span><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor sit amet
                                         consectetur, adipisicing elit. Quibusdam, repellendus dolorum quae dicta ut
@@ -466,11 +450,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="d-flex flex-column justify-content-center align-items-center gap-5 py-5">
-                            <div class="text-center">
-                                <p>TESTIMONIALS</p>
-                                <h4 class="titre">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span> </h4>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="testimonialsCarousel d-flex justify-content-center align-items-center">
                                 <div class="comment">
                                     <span><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor sit amet
                                         consectetur, adipisicing elit. Quibusdam, repellendus dolorum quae dicta ut
@@ -491,11 +471,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="d-flex flex-column justify-content-center align-items-center gap-5 py-5">
-                            <div class="text-center">
-                                <p>TESTIMONIALS</p>
-                                <h4 class="titre">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span> </h4>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="testimonialsCarousel d-flex justify-content-center align-items-center">
                                 <div class="comment">
                                     <span><i class="fa-solid fa-quote-left text-danger"></i> Lorem ipsum dolor sit amet
                                         consectetur, adipisicing elit. Quibusdam, repellendus dolorum quae dicta ut
@@ -504,11 +480,13 @@
                                             class="fa-solid fa-quote-right text-danger"></i></span>
                                     <h4>Anderson Silva</h4>
                                     <p>Student</p>
-                                    <i class="fa-solid fa-star text-warning"></i>
-                                    <i class="fa-solid fa-star text-warning"></i>
-                                    <i class="fa-solid fa-star text-warning"></i>
-                                    <i class="fa-solid fa-star text-warning"></i>
-                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <div class="">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
                                 </div>
                                 <div class="commentImg commentImg3"></div>
                             </div>
@@ -529,6 +507,11 @@
         </section>
         <!--* event carousel  -->
         <section>
+            <div class="d-flex text-center pt-5 pb-3 align-items-center justify-content-center flex-column">
+                <p>Events</p>
+                <h3 class="titre">SHARE <span class="text-danger">YOUR MOMENTS </span> IN OUR RESTAURANT</h3>
+            </div>
+
             <div class="eventCarousel">
                 <i id="left" class="fa-solid fa-angle-left"></i>
                 <ul class="carousell">
@@ -582,7 +565,6 @@
                             </div>
                         </div>
                     </li>
-
                     <li>
                         <div class="eventImg eventImg3">
                             <div>
@@ -603,7 +585,7 @@
                 <span>CHEFS</span>
                 <h2 class="titre">OUR <span class="text-danger"> PROFFESIONAL </span> CHEFS</h2>
             </div>
-            <div class="p-5 d-flex justify-content-center  gap-5">
+            <div class="cards p-5 d-flex justify-content-center  gap-5">
                 <div class="cardChefs">
                     <div class="chefImg">
                         <!-- <img src="./public/images/img/chefs/chefs-1.jpg" alt=""> -->
@@ -667,7 +649,7 @@
             <div class="text-center ">
                 <span>CHEFS</span>
                 <h2 class="titre">BOOK <span class="text-danger"> YOUR STAY </span> WITH US</h2>
-                <div class="d-flex justify-content-center align-items-center gap-5 bg-body-tertiary">
+                <div class="bookDiv d-flex justify-content-center align-items-center gap-5 bg-body-tertiary">
                     <div class="bookImg ">
                     </div>
                     <div class="bookForm">
@@ -685,7 +667,7 @@
                 </div>
             </div>
         </section>
-        <!--~ gallery carousel  -->
+        <!--* gallery carousel  -->
         <section>
             <div class="text-center">
                 <span>Gallery</span>
@@ -750,7 +732,7 @@
                     src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d987.9609298308616!2d-7.536142323753004!3d33.602937641231584!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1705576789693!5m2!1sfr!2sma"
                     height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="formDiv d-flex justify-content-center align-items-center">
                 <div class="contact gap-5 d-flex justify-content-between align-items-center flex-wrap">
                     <div class="contactDetail">
                         <i class="fa-regular fa-map"></i>
@@ -795,8 +777,9 @@
             </div>
         </section>
     </main>
+
     <footer class="bg-black py-3">
-        <div class="d-flex justify-content-around py-5 ">
+        <div class="mainfooter d-flex justify-content-around py-5 ">
             <div class="footerDetail">
                 <i class="fa-solid fa-location-dot"></i>
                 <div>

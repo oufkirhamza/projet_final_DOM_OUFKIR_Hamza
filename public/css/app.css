@@ -11856,6 +11856,61 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #949494;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  font-weight: 6vw;
+  padding: 2vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  gap: 1vw;
+}
+nav ul li {
+  text-decoration: none;
+  font-size: medium;
+  position: relative;
+}
+nav ul li::before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  left: 0;
+  border: 2px solid #df1818;
+  top: 2.9vh;
+}
+nav ul li::before:hover {
+  width: 100%;
+}
+nav ul li:hover {
+  color: #df1818;
+}
+nav i {
+  display: none;
+  cursor: pointer;
+  font-size: 2vw;
+}
+
 .navBtn {
   background-color: #da0000;
   border: none;
@@ -11893,6 +11948,15 @@ textarea.form-control-lg {
   outline: none !important;
 }
 
+@media screen and (max-width: 430px) {
+  nav ul {
+    display: none;
+  }
+  nav i {
+    font-size: 5vw;
+    display: block;
+  }
+}
 @font-face {
   font-family: gloria;
   src: url(../fonts/GloriaHallelujah-Regular.ttf);
@@ -12176,6 +12240,8 @@ textarea.form-control-lg {
 
 .comment {
   width: 50%;
+  padding-left: 2vw;
+  border-left: 5px solid #e71010;
 }
 
 .commentImg {
@@ -12451,6 +12517,161 @@ textarea.form-control-lg {
   padding: 1vh;
 }
 
+@media screen and (max-width: 430px) {
+  .heroSection {
+    width: 100 !important;
+    gap: 5vh;
+  }
+  .heroSection img {
+    width: 100%;
+  }
+  .heroSection .leftSideHeroS {
+    width: 100%;
+    text-align: center;
+  }
+  .heroSection .leftSideHeroS div {
+    justify-content: center;
+    align-items: center;
+  }
+  .heroSection .leftSideHeroS div button {
+    padding: 1.5vh;
+  }
+  .aboutSection {
+    flex-direction: column;
+  }
+  .aboutSection .aboutSectionLeft {
+    width: 100%;
+  }
+  .aboutSection .aboutSectionRight {
+    width: 100%;
+  }
+  .aboutSection .aboutSectionRight .aboutSectionRightVideo i {
+    font-size: 20vw;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards .firstCard {
+    width: 100% !important;
+  }
+  .cards .whiteCards {
+    width: 100% !important;
+    padding: 7vh 0;
+  }
+  .cards .whiteCards span {
+    font-size: 4vw;
+  }
+  .statistics {
+    height: 100vh;
+  }
+  .statistics div {
+    flex-direction: column;
+  }
+  .foodMenu div {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .foodMenu div .palteMenu {
+    width: 100%;
+  }
+  .foodMenu div .palteMenu .plate {
+    font-size: large;
+  }
+  .foodMenu div .palteMenu .plate img {
+    width: 60%;
+  }
+  .foodMenu div .palteMenu .plate span {
+    font-weight: bold;
+  }
+  .carousel-indicators button {
+    width: 3vw !important;
+    height: 3vw !important;
+  }
+  .carousel-item div .testimonialsCarousel {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .carousel-item div .comment {
+    width: 80%;
+  }
+  .carousel-item div .commentImg {
+    object-fit: cover !important;
+    width: 80% !important;
+    height: 80vw !important;
+  }
+  .carousell li {
+    width: 100%;
+  }
+  .carousell li .eventImg {
+    width: 100%;
+  }
+  .carousell li .eventImg div {
+    width: 100%;
+  }
+  .cards {
+    flex-direction: column;
+    padding: 0 !important;
+  }
+  .cards .cardChefs {
+    width: 100%;
+  }
+  .bookDiv {
+    flex-direction: column;
+    padding-bottom: 2vh;
+  }
+  .bookDiv .bookImg {
+    width: 100%;
+  }
+  .bookDiv .bookForm input {
+    width: 100%;
+    padding: 2vh;
+  }
+  .bookDiv .bookForm textarea {
+    width: 100%;
+  }
+  .bookDiv .bookForm button {
+    padding: 1.5vh 5vw;
+  }
+  .galleryCarousel .carouselGallery {
+    width: 100%;
+  }
+  .galleryCarousel .carouselGallery li {
+    width: 100%;
+  }
+  .contact {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact .contactDetail {
+    width: 100%;
+    font-size: larger;
+  }
+  .contact .contactDetail i {
+    width: 10vw;
+    height: 10vw;
+    font-size: larger;
+  }
+  .contactForm {
+    width: 90%;
+    gap: 2vh;
+  }
+  .contactForm form {
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .contactForm form div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .contactForm form div input {
+    width: 100%;
+  }
+  .contactForm button {
+    padding: 1vh 4vw;
+  }
+}
 .footerDetail {
   display: flex;
   gap: 1vw;
@@ -12480,6 +12701,27 @@ textarea.form-control-lg {
   width: 5vw;
   height: 5vw;
   border-radius: 50px;
+}
+
+@media screen and (max-width: 430px) {
+  .mainfooter {
+    flex-direction: column;
+    gap: 4vh;
+    padding: 3vw;
+  }
+  .mainfooter .footerDetail {
+    width: 100%;
+  }
+  .mainfooter .footerDetail i {
+    font-size: 8vw;
+    width: 8vw;
+    height: 8vw;
+  }
+  .mainfooter .footerSocialM div {
+    display: flex;
+    font-size: larger;
+    gap: 5vw;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

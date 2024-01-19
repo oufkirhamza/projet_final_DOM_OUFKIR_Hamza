@@ -1,3 +1,49 @@
+*
+    padding: 0
+    margin: 0
+nav
+    background-color: #949494
+    display: flex
+    align-items: center
+    justify-content: space-around
+    font-size: large
+    font-weight: 6vw
+    padding: 2vh
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
+    a
+        text-decoration: none
+        color: black
+        font-weight: bold
+        font-size: large
+    ul
+        list-style: none
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0
+        margin: 0
+        gap: 1vw
+        li
+            text-decoration: none
+            font-size: medium
+            position: relative
+            &::before
+                content: ""
+                width: 0%
+                position: absolute
+                left: 0
+                border: 2px solid #df1818
+                top: 2.9vh
+                // transition: 1s
+                &:hover
+                    width: 100%
+            &:hover
+                color: #df1818
+                &::before
+    i
+        display: none
+        cursor: pointer
+        font-size: 2vw
 .navBtn
     background-color: #da0000
     border: none
@@ -19,7 +65,7 @@
             &:focus
                 outline: none !important
             &:hover
-                
+
 .LogInModal
     form
         display: flex
@@ -31,3 +77,11 @@
             border: 1px solid #919090
             &:focus
                 outline: none !important
+
+@media screen and ( max-width: 430px )
+    nav
+        ul
+            display: none
+        i
+            font-size: 5vw
+            display: block
