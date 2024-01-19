@@ -11985,11 +11985,19 @@ nav i {
   justify-content: center;
   align-items: center;
   gap: 0.5vw;
+  color: #000 !important;
+  border: 1px solid #dcdcdc;
+  padding: 0 2vw;
+  border-radius: 50px;
 }
 .heroBtn i {
   color: #dd1f1f;
   font-size: 1.8vw;
   font-weight: lighter;
+}
+.heroBtn:hover {
+  border: 1px solid #dd1f1f !important;
+  background: none !important;
 }
 
 .bookTable {
@@ -12040,15 +12048,29 @@ nav i {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.aboutSectionRightVideo div {
-  position: absolute;
-  background-color: #fff;
-  border-radius: 50%;
+.aboutSectionRightVideo .button {
   display: flex;
   justify-content: center;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: linear-gradient(30deg, rgb(234, 15, 15) 20%, rgb(255, 38, 0) 80%);
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgb(234, 14, 14) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
   align-items: center;
+  border: 0;
+}
+.aboutSectionRightVideo .button:is(:hover, :focus) {
+  transform: scale(1.2);
 }
 
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 45px rgba(193, 244, 246, 0);
+  }
+}
 .cards {
   background-color: rgba(186, 184, 184, 0.1450980392);
   display: flex;
@@ -12310,8 +12332,42 @@ nav i {
   scroll-behavior: smooth;
 }
 
-.no-transition {
-  scroll-behavior: auto;
+.videoDiv {
+  position: fixed;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5607843137);
+  z-index: 10;
+}
+.videoDiv i {
+  cursor: pointer;
+  position: absolute;
+  right: 3vw;
+  top: 2vh;
+  color: #fff;
+  font-size: xx-large;
+}
+
+.videoDiv1 {
+  position: fixed;
+  overflow-y: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5607843137);
+  z-index: 10;
+}
+.videoDiv1 i {
+  cursor: pointer;
+  position: absolute;
+  right: 3vw;
+  top: 2vh;
+  color: #fff;
+  font-size: xx-large;
 }
 
 .eventImg {

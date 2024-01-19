@@ -19,10 +19,17 @@
     justify-content: center
     align-items: center
     gap: 0.5vw
+    color: #000 !important
+    border: 1px solid #dcdcdc
+    padding: 0 2vw
+    border-radius: 50px
     i
         color: #dd1f1f
         font-size: 1.8vw
         font-weight: lighter
+    &:hover
+        border: 1px solid #dd1f1f !important
+        background: none !important
 .bookTable
     background-color: #da0000
     border: none
@@ -47,6 +54,7 @@
         flex-direction: column
         justify-content: center
         align-items: center
+
 .aboutSectionRight
     width: 42%
     display: flex
@@ -64,15 +72,26 @@
     height: 60vh
     background-size: contain
     background-repeat: no-repeat
-    div
-        position: absolute
-        background-color: #fff
-        // width: 150px
-        // height: 150px
-        border-radius: 50%
+    .button
         display: flex
         justify-content: center
+        color: #fff
+        width: 80px
+        height: 80px
+        border-radius: 100%
+        background: linear-gradient(30deg, rgb(234, 15, 15) 20%, rgb(255, 38, 0) 80%)
+        transition: all 0.3s ease-in-out 0s
+        box-shadow: rgb(234, 14, 14) 0px 0px 0px 0px
+        animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse
         align-items: center
+        border: 0
+    .button:is(:hover, :focus)
+        transform: scale(1.2)
+
+@keyframes pulse
+    100%
+        box-shadow: 0 0 0 45px rgba(193,244,246,0)
+
 .cards
     background-color: #bab8b825
     display: flex
@@ -292,9 +311,38 @@
         gap: 2.8vw
         overflow: hidden
         scroll-behavior: smooth
-.no-transition
-    scroll-behavior: auto
-
+.videoDiv
+    position: fixed
+    overflow-y: hidden
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #0000008f
+    z-index: 10
+    i
+        cursor: pointer
+        position: absolute
+        right: 3vw
+        top: 2vh
+        color: #fff
+        font-size: xx-large
+.videoDiv1
+    position: fixed
+    overflow-y: hidden
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #0000008f
+    z-index: 10
+    i
+        cursor: pointer
+        position: absolute
+        right: 3vw
+        top: 2vh
+        color: #fff
+        font-size: xx-large
 .eventImg
     background-image: url(../images/img/events-1.jpg)
     width: 30vw
