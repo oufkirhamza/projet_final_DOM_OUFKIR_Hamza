@@ -513,6 +513,20 @@
         input
             width: 100%
             padding: 1vh
+.goBack
+    width: 3vw
+    height: 3vw
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #ed0f0f
+    border-radius: 60px
+    position: fixed
+    bottom: 5vh
+    right: 3vh
+    list-style: none
+    color: #fff
+    z-index: 1000
 
 @media screen and ( max-width: 430px )
     .heroSection
@@ -636,7 +650,7 @@
                     width: 100%
         button
             padding: 1vh 4vw
-
+    
 @media screen and ( max-width: 770px )
     .heroSection
         width: 100% !important
@@ -725,10 +739,11 @@
                 div
                     width: 100%
     .cards
-        flex-direction: column
+        flex-wrap: wrap
+        flex-direction: row
         padding: 0 !important
         .cardChefs
-            width: 100%
+            width: 40% !important
     .bookDiv
         flex-direction: column
         padding-bottom: 2vh
@@ -736,7 +751,7 @@
             width: 100%
         .bookForm
             input
-                width: 100%
+                width: 48%
                 padding: 2vh
             textarea
                 width: 100%
@@ -772,3 +787,7 @@
                     width: 100%
         button
             padding: 1vh 4vw
+    .goBack
+        width: 5vw
+        height: 5vw
+
