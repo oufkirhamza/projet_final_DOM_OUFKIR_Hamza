@@ -1,3 +1,12 @@
+let myBody = document.body
+let navIcon = document.querySelector('.navIcon')
+let navElmnts = document.querySelector(".navElmnts")
+navIcon.addEventListener('click',()=>{
+    navElmnts.classList.toggle('navRight')
+    myBody.classList.toggle('scrollnav')
+})
+
+
 let Choices = document.querySelector(".foodChoices")
 let foodMenu = document.querySelector(".foodMenu")
 let eachFoodMenu = foodMenu.children
@@ -69,8 +78,10 @@ arrowBtnGAllery.forEach(btn => {
         }
     })
 });
-let myBody = document.body
 let videoDiv = document.querySelector('.videoDiv')
+let video = document.querySelector('.videoDiv iframe')
+let video1 = document.querySelector('.videoDiv1 iframe')
+
 let videoDiv1 = document.querySelector('.videoDiv1')
 let heroBtn = document.querySelector('.heroBtn')
 let xDivVideo = document.querySelector('.videoDiv i')
@@ -81,6 +92,8 @@ heroBtn.addEventListener('click', () => {
     xDivVideo.addEventListener("click", () => {
         videoDiv.classList.add("d-none")
         myBody.style.overflow = "auto"
+        let iframeSrc = video.src
+        video.src = iframeSrc
     })
 })
 
@@ -91,6 +104,8 @@ vidBtn.addEventListener('click',()=>{
     xDivVideo1.addEventListener("click", () => {
         videoDiv1.classList.add("d-none")
         myBody.style.overflow = "auto"
+        let iframeSrc1 = video1.src
+        video1.src = iframeSrc1
     })
 
 })

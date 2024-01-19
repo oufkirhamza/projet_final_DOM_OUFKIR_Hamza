@@ -13,7 +13,7 @@
 <body>
     <nav>
         <a class="fw-bolder fs-3" href="#">LionsResto <span class="text-danger ">.</span></a>
-        <ul>
+        <ul class="navElmnts">
             <li>
                 <a href="#">Home</a>
             </li>
@@ -30,10 +30,15 @@
                 <a href="">Chefs</a>
             </li>
             <li>
-                <a href="">Gallery</a>
+                <a  href="">Gallery</a>
             </li>
             <li>
-                <a class="text-danger" href="">Drop Down</a>
+                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown">Drop Down</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
             </li>
             <li>
                 <a href="">Contact</a>
@@ -43,45 +48,46 @@
         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Sign up | Log in
         </button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Connexion</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <i class="navIcon d-lg-none fa-solid fa-bars"></i>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Connexion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column gap-2">
+                    <div class="modalBtn d-flex gap-3">
+                        <button class="w-50 bg-danger border border-danger text-light py-2">Sign Up</button>
+                        <button class="w-50 bg-light border border-danger text-danger py-2">Log In</button>
                     </div>
-                    <div class="modal-body d-flex flex-column gap-2">
-                        <div class="modalBtn d-flex gap-3">
-                            <button class="w-50 bg-danger border border-danger text-light py-2">Sign Up</button>
-                            <button class="w-50 bg-light border border-danger text-danger py-2">Log In</button>
-                        </div>
-                        <div class="LogInModal d-none">
-                            <h5 class="text-center">Log in</h5>
-                            <form>
-                                <input type="email" placeholder="email">
-                                <input type="password" placeholder="password">
-                            </form>
-                        </div>
-                        <div class="signUpModal ">
-                            <h5 class="text-center">Sign up</h5>
-                            <form class="d-flex flex-column gap-2">
-                                <input type="text" placeholder="First Name">
-                                <input type="text" placeholder="Second Name">
-                                <input type="email" placeholder="email">
-                                <input type="password" placeholder="password">
-                                <input type="password" placeholder="confirm your password">
-                            </form>
-                        </div>
+                    <div class="LogInModal d-none">
+                        <h5 class="text-center">Log in</h5>
+                        <form>
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                        </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Sign up</button>
+                    <div class="signUpModal ">
+                        <h5 class="text-center">Sign up</h5>
+                        <form class="d-flex flex-column gap-2">
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Second Name">
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                            <input type="password" placeholder="confirm your password">
+                        </form>
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign up</button>
                 </div>
             </div>
         </div>
-        <i class="fa-solid fa-toggle-off"></i>
-    </nav>
+    </div>
+
     <main>
         <!--~ hero Section -->
         <section>
@@ -153,9 +159,12 @@
                     </div>
                     <div class="d-none videoDiv1 w-100 h-100 d-flex justify-content-center align-items-center ">
                         <i class="fa-solid fa-xmark"></i>
-                        <iframe width="996" height="560" src="https://www.youtube.com/embed/vtG4lGJ2lig" title="The Best 20 Seconds in El Clasico Ever" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="996" height="560" src="https://www.youtube.com/embed/vtG4lGJ2lig"
+                            title="The Best 20 Seconds in El Clasico Ever" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
         </section>
         <!--~ cards  -->
         <section>
@@ -192,19 +201,19 @@
         <section>
             <div class="statistics">
                 <div>
-                    <div>
+                    <div class="numbers">
                         <h3>232</h3>
                         <span>Clients</span>
                     </div>
-                    <div>
+                    <div class="numbers">
                         <h3>521</h3>
                         <span>Projects</span>
                     </div>
-                    <div>
+                    <div class="numbers">
                         <h3>1453</h3>
                         <span>Hours Of Support</span>
                     </div>
-                    <div>
+                    <div class="numbers">
                         <h3>32</h3>
                         <span>Workers</span>
                     </div>

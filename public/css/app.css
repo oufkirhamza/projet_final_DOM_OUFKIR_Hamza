@@ -11862,13 +11862,15 @@ textarea.form-control-lg {
 }
 
 nav {
-  background-color: #949494;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   font-size: large;
   font-weight: 6vw;
   padding: 2vh;
+  z-index: 1000;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3254901961);
+  justify-content: space-between;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 }
 nav a {
@@ -11891,19 +11893,20 @@ nav ul li {
   font-size: medium;
   position: relative;
 }
-nav ul li::before {
+nav ul li a:hover {
+  color: #df1818;
+}
+nav ul li::after {
   content: "";
+  border-bottom: 3px solid #ec0707;
   width: 0%;
   position: absolute;
   left: 0;
-  border: 2px solid #df1818;
-  top: 2.9vh;
+  top: 5vh;
+  transition: 600ms;
 }
-nav ul li::before:hover {
+nav ul li:hover::after {
   width: 100%;
-}
-nav ul li:hover {
-  color: #df1818;
 }
 nav i {
   display: none;
@@ -11948,9 +11951,33 @@ nav i {
   outline: none !important;
 }
 
-@media screen and (max-width: 430px) {
+.navRight {
+  right: 0;
+}
+
+.scrollnav {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 770px) {
+  nav {
+    width: 100% !important;
+    position: fixed;
+    top: 0;
+  }
   nav ul {
-    display: none;
+    padding: 1vw;
+    width: 50%;
+    height: 100vh;
+    background-color: #fefcfc;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 3vh;
+    position: fixed;
+    right: -100%;
+    top: 9.8vh;
+    transition: 1s;
   }
   nav i {
     font-size: 5vw;
@@ -12592,6 +12619,12 @@ nav i {
   .heroSection .leftSideHeroS div button {
     padding: 1.5vh;
   }
+  .heroSection .leftSideHeroS div button i {
+    font-size: larger;
+  }
+  .videoDiv {
+    width: 100%;
+  }
   .aboutSection {
     flex-direction: column;
   }
@@ -12660,6 +12693,184 @@ nav i {
   }
   .carousell li .eventImg {
     width: 100%;
+  }
+  .carousell li .eventImg div {
+    width: 100%;
+  }
+  .cards {
+    flex-direction: column;
+    padding: 0 !important;
+  }
+  .cards .cardChefs {
+    width: 100%;
+  }
+  .bookDiv {
+    flex-direction: column;
+    padding-bottom: 2vh;
+  }
+  .bookDiv .bookImg {
+    width: 100%;
+  }
+  .bookDiv .bookForm input {
+    width: 100%;
+    padding: 2vh;
+  }
+  .bookDiv .bookForm textarea {
+    width: 100%;
+  }
+  .bookDiv .bookForm button {
+    padding: 1.5vh 5vw;
+  }
+  .galleryCarousel .carouselGallery {
+    width: 100%;
+  }
+  .galleryCarousel .carouselGallery li {
+    width: 100%;
+  }
+  .contact {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact .contactDetail {
+    width: 100%;
+    font-size: larger;
+  }
+  .contact .contactDetail i {
+    width: 10vw;
+    height: 10vw;
+    font-size: larger;
+  }
+  .contactForm {
+    width: 90%;
+    gap: 2vh;
+  }
+  .contactForm form {
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .contactForm form div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .contactForm form div input {
+    width: 100%;
+  }
+  .contactForm button {
+    padding: 1vh 4vw;
+  }
+}
+@media screen and (max-width: 770px) {
+  .heroSection {
+    width: 100% !important;
+    gap: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+  }
+  .heroSection img {
+    width: 80%;
+  }
+  .heroSection .leftSideHeroS {
+    width: 100%;
+    text-align: center;
+  }
+  .heroSection .leftSideHeroS div {
+    justify-content: center;
+    align-items: center;
+  }
+  .heroSection .leftSideHeroS div button {
+    padding: 1vh 3vh;
+  }
+  .heroSection .leftSideHeroS div button i {
+    font-size: larger;
+  }
+  .videoDiv {
+    width: 100%;
+  }
+  .aboutSection {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0;
+  }
+  .aboutSection .aboutSectionLeft {
+    width: 90% !important;
+  }
+  .aboutSection .aboutSectionRight {
+    width: 90% !important;
+  }
+  .aboutSection .aboutSectionRight .aboutSectionRightVideo {
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutSection .aboutSectionRight .aboutSectionRightVideo i {
+    font-size: 20vw;
+  }
+  .cards {
+    flex-direction: column;
+    padding: 2vh 0;
+  }
+  .cards .firstCard {
+    width: 100% !important;
+  }
+  .cards .whiteCards {
+    width: 100% !important;
+    padding: 7vh 0;
+  }
+  .cards .whiteCards span {
+    font-size: 4vw;
+  }
+  .statistics {
+    height: 100vh;
+  }
+  .statistics div {
+    flex-direction: column;
+  }
+  .foodMenu div {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .foodMenu div .palteMenu {
+    width: 100%;
+  }
+  .foodMenu div .palteMenu .plate {
+    font-size: large;
+  }
+  .foodMenu div .palteMenu .plate img {
+    width: 60%;
+  }
+  .foodMenu div .palteMenu .plate span {
+    font-weight: bold;
+  }
+  .carousel-indicators button {
+    width: 1vw !important;
+    height: 1vw !important;
+  }
+  .carousel-item div .testimonialsCarousel {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .carousel-item div .comment {
+    width: 80%;
+  }
+  .carousel-item div .commentImg {
+    object-fit: cover !important;
+    width: 40% !important;
+    height: 40vw !important;
+  }
+  .carousell {
+    display: flex;
+  }
+  .carousell li {
+    min-width: 100%;
+  }
+  .carousell li .eventImg {
+    min-width: 100%;
   }
   .carousell li .eventImg div {
     width: 100%;
