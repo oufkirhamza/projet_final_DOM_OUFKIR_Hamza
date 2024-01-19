@@ -257,6 +257,70 @@
         height: 0.6vw !important
         border-radius: 50%
         background-color: #d41313 !important
+
+.eventCarousel
+    padding: 5vh 0
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    i
+        background: #000
+        width: 2vw
+        height: 2vw
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+        cursor: pointer
+        &:first-child
+            position: absolute
+            left: 3vw
+            top: 50%
+            transform: translate(-50%)
+        &:last-child
+            position: absolute
+            right: -1vw
+            top: 50%
+            transform: translate(-50%)
+    ul
+        display: flex
+        list-style: none
+        gap: 2.8vw
+        overflow: hidden
+        scroll-behavior: smooth
+.no-transition
+    scroll-behavior: auto
+
+.eventImg
+    background-image: url(../images/img/events-1.jpg)
+    width: 30vw
+    height: 70vh
+    background-size: cover
+    background-repeat: no-repeat
+    color: #fff
+    div
+        background-color: #06060665
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: end
+        padding-left: 1.5vw
+        font-size: large
+        font-weight: bold
+        h3
+            border-bottom: 3px solid #d71515
+            width: fit-content
+        p
+            width: 80%
+            font-weight: normal
+.eventImg2
+    background-image: url(../images/img/events-2.jpg)
+.eventImg3
+    background-image: url(../images/img/events-3.jpg)
+
 .foodChoices
     display: flex
     justify-content: center
@@ -311,6 +375,43 @@
             font-weight: bolder
             font-size: large
 
+.galleryCarousel
+    position: relative
+    i
+        background: #fff
+        width: 2vw
+        height: 2vw
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #000
+        cursor: pointer
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.47)
+        &:first-child
+            position: absolute
+            left: 3vw
+            top: 50%
+            transform: translate(-50%)
+        &:last-child
+            position: absolute
+            right: -1vw
+            top: 50%
+            transform: translate(-50%)
+    ul
+        list-style: none
+        display: flex
+        gap: 1vw
+        overflow: hidden
+        padding: 3vw
+        scroll-behavior: smooth
+
+.GalleryImg
+    img
+        width: 18vw
+        // height: 16vw
+        object-fit: contain
+
 .map
     display: flex
     justify-content: center
@@ -362,3 +463,6 @@
         input
             width: 100%
             padding: 1vh
+
+@media  (max-width : 430px)
+    

@@ -12206,6 +12206,84 @@ textarea.form-control-lg {
   background-color: #d41313 !important;
 }
 
+.eventCarousel {
+  padding: 5vh 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eventCarousel i {
+  background: #000;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.eventCarousel i:first-child {
+  position: absolute;
+  left: 3vw;
+  top: 50%;
+  transform: translate(-50%);
+}
+.eventCarousel i:last-child {
+  position: absolute;
+  right: -1vw;
+  top: 50%;
+  transform: translate(-50%);
+}
+.eventCarousel ul {
+  display: flex;
+  list-style: none;
+  gap: 2.8vw;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.no-transition {
+  scroll-behavior: auto;
+}
+
+.eventImg {
+  background-image: url(../images/img/events-1.jpg);
+  width: 30vw;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.eventImg div {
+  background-color: rgba(6, 6, 6, 0.3960784314);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 1.5vw;
+  font-size: large;
+  font-weight: bold;
+}
+.eventImg div h3, .eventImg div .h3 {
+  border-bottom: 3px solid #d71515;
+  width: fit-content;
+}
+.eventImg div p {
+  width: 80%;
+  font-weight: normal;
+}
+
+.eventImg2 {
+  background-image: url(../images/img/events-2.jpg);
+}
+
+.eventImg3 {
+  background-image: url(../images/img/events-3.jpg);
+}
+
 .foodChoices {
   display: flex;
   justify-content: center;
@@ -12265,6 +12343,47 @@ textarea.form-control-lg {
   color: #fff;
   font-weight: bolder;
   font-size: large;
+}
+
+.galleryCarousel {
+  position: relative;
+}
+.galleryCarousel i {
+  background: #fff;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.47);
+}
+.galleryCarousel i:first-child {
+  position: absolute;
+  left: 3vw;
+  top: 50%;
+  transform: translate(-50%);
+}
+.galleryCarousel i:last-child {
+  position: absolute;
+  right: -1vw;
+  top: 50%;
+  transform: translate(-50%);
+}
+.galleryCarousel ul {
+  list-style: none;
+  display: flex;
+  gap: 1vw;
+  overflow: hidden;
+  padding: 3vw;
+  scroll-behavior: smooth;
+}
+
+.GalleryImg img {
+  width: 18vw;
+  object-fit: contain;
 }
 
 .map {

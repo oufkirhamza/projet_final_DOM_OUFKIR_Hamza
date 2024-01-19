@@ -41,4 +41,33 @@ modalBtn[1].addEventListener('click',()=>{
     loginModal.classList.remove("d-none")
     signUpModal.classList.add("d-none")
     modalFooterBtn[1].innerHTML='Log in'
+    
 })
+let carousel = document.querySelector('.carousell')
+let arrowBtn = document.querySelectorAll('.eventCarousel i')
+let imgCardWidth = document.querySelector('.eventImg').offsetWidth;
+arrowBtn.forEach(btn => {
+    btn.addEventListener('click',()=>{
+        if (btn.id === "left") {
+            carousel.scrollLeft -= 510
+        }else{
+            carousel.scrollLeft += 510
+        }
+    })
+});
+
+let galleryCarousel = document.querySelector('.carouselGallery');
+let arrowBtnGAllery = document.querySelectorAll('.galleryCarousel i');
+let galleryCardWidth = document.querySelector('.GalleryImg img').offsetWidth;
+
+arrowBtnGAllery.forEach(btn => {
+    btn.addEventListener('click',()=>{
+        if (btn.id === "left") {
+            galleryCarousel.scrollLeft -= 310
+        }else{
+            galleryCarousel.scrollLeft += 310
+        }
+    })
+});
+
+
